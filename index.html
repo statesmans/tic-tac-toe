@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="burger-btn burger-btn--disable" id="burgerBtn">
+            <span class="burger-line"></span>
+        </div>
+
+        <div class="burger-menu burger-menu--disable" id="burgerMenu">
+            <h2 class="burger-menu__title">Menu</h2>
+            <div class="burger-menu__btn-wrap">
+                <button class="burger-menu__btn interrupt-game" id="interraptGame">Interrupt game</button>
+                <button class="burger-menu__btn reload-game" id="reloadGame">Reload game</button>
+            </div>
+        </div>
+
+
+        <div class="start-window start-window--active" id="startWindow">
+            <h1 class="start-window__title">Welcome gamer</h1>
+            <div class="start-window__form">
+                <div class="start-window__square-number square-number">
+                    <h2 class="square-number__title" >Choose board size (NxN)</h2>
+                    <input type="text" class="square-number__input" id="boardSizeInput" placeholder="N (5-20)">
+                </div>
+            </div>
+            <button class="start-window__start-button" id="buttonInput">Let's start</button>
+        </div>
+
+        <canvas class="tic-toe__field" id="ticTacToeField" ></canvas>
+
+        <div class="over-window over-window--disable" id="winnerWindow">
+            <h1 class="over-window__title" id="overTitle"></h1>
+
+            <div class="over-window__square-number square-number">
+                <h2 class="square-number__title">Can change board size (NxN)</h2>
+                <input type="text" class="square-number__input" id="changeSizeInput" placeholder="N (5-20)">
+            </div>
+            <button class="over-window__start-button" id="tryAgainBtn">Try again</button>
+        </div>
+    </div>
+    
+<script src="main.js"></script>
+</body>
+</html>

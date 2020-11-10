@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/7b8e71074d9254cb2784c322b65c13c211.svg')no-repeat center top /cover #fcdb00;
+    font-family: 'Ubuntu';
+}
+
+.burger-btn {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #000;
+    box-shadow: 2px 2px 0 0 rgb(228, 97, 97);
+    cursor: pointer;
+
+    &--active {
+        display: block;
+    }
+
+    &--disable {
+        display: none;
+    }
+    
+    &:hover {
+        top: 7px;
+        left: 7px;
+        box-shadow: none;
+        .burger-line {
+            background-color: rgb(228, 97, 97);
+        }
+    }
+}
+
+.burger-line {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        display: block;
+        height: 4px;
+        width: 20px;
+        background-color: inherit;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        display: block;
+        height: 4px;
+        width: 20px;
+        background-color: inherit;
+    }
+}
+
+.burger-menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: none;
+    width: 250px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fcb900;
+    border: 1px solid #000;
+
+    &--active {
+        display: block;
+    }
+
+    &--disable {
+        display: none;
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    &__btn {
+
+        width: 100px;
+        height: 30px;
+        background-color: #fca400;
+        border: 2px solid #000;
+        color: #000;
+        cursor: pointer;
+
+        &:hover {
+            font-size: 12px;
+            border: 1px solid black;
+            background-color: #fcac00;
+        }
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+.start-window {
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 120px auto 0;
+    background-color: #fcdb00;
+    border: 2px solid #000;
+    text-align: center;
+    text-shadow: 1px 2px 0 rgb(228, 97, 97);
+    border-radius: 2px;
+    &--active {
+        display: block;
+    }
+    &--disable {
+        display: none;
+    }
+    &__title {
+        font-size: 24px;
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 20px 0;
+    }
+    &__start-button {
+        width: 40%;
+        height: 40px;
+        margin: 0 auto;
+        color: #000;
+        background-color: #fcb900;
+        border: 1px solid #000;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid black;
+            background-color: #fcac00;
+            font-size: 12px;
+        }
+    }
+}
+
+.tic-toe__field {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 125px;
+}
+
+.square-number {
+    &__title {
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+    &__input {
+        padding: 3px 7px;
+        font-size: 14px;
+        background-color: rgba(232, 100, 100, .4);
+        border: 1px solid black;
+        border-radius: 2px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.name-field {
+    &__title {
+        font-size: 14px;
+    }
+}
+
+.over-window {
+    
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fcb900;
+    border-radius: 2px;
+    border: 1px solid #000;
+    &--active {
+        display: block; 
+    }
+    &--disable {
+        display: none; 
+    }
+
+    &__title {
+        padding: 8px 0px 12px 0;
+    }
+
+    &__start-button {
+        width: 40%;
+        height: 40px;
+        margin: 10px auto;
+        color: #000;
+        background-color: #fca400;
+        border: 1px solid #000;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid #eee;
+            background-color: #fcb900;
+            font-size: 12px;
+        }
+    }
+}
+
+.square-number {
+    &__title {
+        padding-bottom: 5px;
+    }
+}
