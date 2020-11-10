@@ -1,7 +1,7 @@
 # Tic Tac Toe
 
 
-## [Click to see]()
+## [Click to see](https://statesmans.github.io/tic-tac-toe/)
 
 #### Implement a five-in-a-row tic-tac-toe game in JavaScript on the NxN field 
 #### (N must be configurable in the user interface). The implementation should 
